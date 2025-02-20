@@ -7,6 +7,11 @@ import thumbsup from "../assets/images/thumbsup.png";
 import aeble from "../assets/images/aeble.png";
 import tiktok from "../assets/images/tiktok.png";
 import minor from "../assets/images/minor-logo.png";
+import g1 from "../assets/images/g1.png";
+import g2 from "../assets/images/g2.png";
+import g3 from "../assets/images/g3.png";
+import g4 from "../assets/images/g4.png";
+import g5 from "../assets/images/g5.png";
 ---
 
 <MainLayout title="Titel">
@@ -40,26 +45,32 @@ import minor from "../assets/images/minor-logo.png";
     Digital Oprydningsdag
   </h2>
   <section class="grid md:grid-cols-3 lg:grid-cols-5">
-    <div class="m-4 border-2 border-solid content-center">
-      <p class="p-6 py-10">Hjælper med at reducere CO₂-udledning</p>
+    <div class="py-10 m-4 border-2 border-solid flex justify-center">
+      <Image src={g1} alt="" class="h-auto w-auto" />
     </div>
-    <div class="m-4 border-2 border-solid content-center">
-      <p class="p-6 py-10">Forlænger dine enheders levetid</p>
+    <div class="py-10 m-4 border-2 border-solid flex justify-center">
+      <Image src={g2} alt="" class="h-auto w-auto" />
     </div>
-    <div class="m-4 border-2 border-solid content-center">
-      <p class="p-6 py-10">
-        Gør det hurtigere og lettere at dele og finde information
-      </p>
+    <div class="py-10 m-4 border-2 border-solid flex justify-center">
+      <Image src={g3} alt="" class="h-auto w-auto" />
     </div>
-    <div class="m-4 border-2 border-solid content-center">
-      <p class="p-6 py-10">Reducerer sikkerhedsrisici ved datalagring</p>
+    <div class="py-10 m-4 border-2 border-solid flex justify-center">
+      <Image src={g4} alt="" class="h-auto w-auto" />
     </div>
-    <div class="m-4 border-2 border-solid content-center">
-      <p class="p-6 py-10">
-        Øger disk- og serverkapacitet, hvilket hjælper med at reducere
-        omkostninger
-      </p>
+    <div class="py-10 m-4 border-2 border-solid flex justify-center">
+      <Image src={g5} alt="" class="h-auto w-auto" />
     </div>
+
+    <p class="p-6 py-10">Hjælper med at reducere CO₂-udledning</p>
+    <p class="p-6 py-10">Forlænger dine enheders levetid</p>
+    <p class="p-6 py-10">
+      Gør det hurtigere og lettere at dele og finde information
+    </p>
+    <p class="p-6 py-10">Reducerer sikkerhedsrisici ved datalagring</p>
+    <p class="p-6 py-10">
+      Øger disk- og serverkapacitet, hvilket hjælper med at reducere
+      omkostninger
+    </p>
   </section>
 
   <section class="bg-orange-100 text-red-500/90 mt-10 p-20 grid grid-cols-2">
