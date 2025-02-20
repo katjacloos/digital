@@ -4,7 +4,7 @@ import Button from "../components/Button.astro";
 import Link from "../components/Link.astro";
 import { Image } from "astro:assets";
 import thumbsup from "../assets/images/thumbsup.png";
-import aeble from "../assets/images/æble.png";
+import aeble from "../assets/images/aeble.png";
 ---
 
 <MainLayout title="Titel">
@@ -13,12 +13,15 @@ import aeble from "../assets/images/æble.png";
     <div class="p-8 grid content-center">
       <h1 class="text-6xl uppercase font-bold pb-8">Digital Oprydningsdag</h1>
       <p class="pl-10 text-xl">- ryd op i dit digitale skrald!</p>
-      <Image src={aeble} alt="Æble" class="" />
+      <div class="flex justify-center">
+        <Image src={aeble} alt="Æble" class="w-150" />
+      </div>
       <h1 class="text-6xl text-right uppercase font-bold pb-8">
         15. marts 2025
       </h1>
     </div>
   </section>
+  <!-- herosection -->
 
   <section class="grid grid-cols-1 text-m">
     <p>
@@ -31,29 +34,33 @@ import aeble from "../assets/images/æble.png";
     </p>
   </section>
 
-  <h2 class="text-2xl uppercase font-bold pb-8">Digital Oprydningsdag</h2>
-  <section class="grid grid-cols-5">
-    <div class="border-2 border-solid">
-      <p>Hjælper med at reducere CO₂-udledning</p>
+  <h2 class="pl-10 pt-18 text-2xl uppercase font-bold pb-8">
+    Digital Oprydningsdag
+  </h2>
+  <section class="grid md:grid-cols-3 lg:grid-cols-5">
+    <div class="m-4 border-2 border-solid content-center">
+      <p class="p-6 py-10">Hjælper med at reducere CO₂-udledning</p>
     </div>
-    <div class="border-2 border-solid">
-      <p>Forlænger dine enheders levetid</p>
+    <div class="m-4 border-2 border-solid content-center">
+      <p class="p-6 py-10">Forlænger dine enheders levetid</p>
     </div>
-    <div class="border-2 border-solid">
-      <p>Gør det hurtigere og lettere at dele og finde information</p>
+    <div class="m-4 border-2 border-solid content-center">
+      <p class="p-6 py-10">
+        Gør det hurtigere og lettere at dele og finde information
+      </p>
     </div>
-    <div class="border-2 border-solid">
-      <p>Reducerer sikkerhedsrisici ved datalagring</p>
+    <div class="m-4 border-2 border-solid content-center">
+      <p class="p-6 py-10">Reducerer sikkerhedsrisici ved datalagring</p>
     </div>
-    <div class="border-2 border-solid">
-      <p>
+    <div class="m-4 border-2 border-solid content-center">
+      <p class="p-6 py-10">
         Øger disk- og serverkapacitet, hvilket hjælper med at reducere
         omkostninger
       </p>
     </div>
   </section>
 
-  <section class="grid grid-cols-2">
+  <section class="bg-orange-100 text-red-500/90 mt-10 p-20 grid grid-cols-2">
     <img src="" alt="" />
     <p>
       Vær cool – giv ikke global opvarmning næring med digitalt affald! Skær ned
@@ -61,73 +68,82 @@ import aeble from "../assets/images/æble.png";
     </p>
   </section>
 
-  <h2 class="text-2xl uppercase font-bold pb-8">Digital Oprydningsdag</h2>
+  <h2 class="pl-10 pt-18 text-2xl uppercase font-bold pb-8">
+    Fakta om Digitalt affald
+  </h2>
+  <h4 class="pl-16 text-m font-bold pb-8">Vidste du..?</h4>
   <section class="grid grid-cols-1">
-    <div class="border-t-2 border-b-2 border-black">
-      <p>
+    <div class="mx-4 mb-4 border-t-2 border-b-2 border-orange-100">
+      <p class="p-4">
         Det kræver mere energi at mine Bitcoin, end hele New Zealand forbruger
         på et år! (a), (b)
       </p>
     </div>
-    <div class="border-t-2 border-b-2 border-black">
-      <p>
+    <div class="mx-4 mb-4 border-t-2 border-b-2 border-orange-100">
+      <p class="p-4">
         Internettet udleder mere end 900 millioner tons CO₂ hvert år! (a), (b),
         (c), (d)
       </p>
     </div>
-    <div class="border-t-2 border-b-2 border-black">
-      <p>
+    <div class="mx-4 mb-4 border-t-2 border-b-2 border-orange-100">
+      <p class="p-4">
         90 % af al data tilgås aldrig igen tre måneder efter, den er lagret. (a)
       </p>
     </div>
-    <div class="border-t-2 border-b-2 border-black">
-      <p>
+    <div class="mx-4 mb-4 border-t-2 border-b-2 border-orange-100">
+      <p class="p-4">
         I 2007 blev der skabt én zettabyte data globalt. I 2010 var dette
         fordoblet. I 2035 vil vi skabe mere end 2.000 zettabytes. For at printe
         én zettabyte data ville der kræves papir fra 20 billioner træer – men
         der findes kun ca. 3,5 billioner træer på jorden. (a), (b)
       </p>
     </div>
-    <div class="border-t-2 border-b-2 border-black">
-      <p>
+    <div class="mx-4 mb-4 border-t-2 border-b-2 border-orange-100">
+      <p class="p-4">
         Én e-mail udleder i gennemsnit 4 g CO₂ – det svarer til en elpære tændt
         i 6 minutter! (a), (b), (c)
       </p>
     </div>
-    <div class="border-t-2 border-b-2 border-black">
-      <p>
+    <div class="mx-4 mb-4 border-t-2 border-b-2 border-orange-100">
+      <p class="p-4">
         I 2022 blev omkring 70 millioner servere brugt til at lagre data. Hver
         af dem udledte 1–2 tons CO₂, og ca. 20 millioner endte som e-affald. (a)
       </p>
     </div>
-    <div class="border-t-2 border-b-2 border-black">
-      <p>99 % af al data er skabt inden for de sidste 10 år. (a)</p>
+    <div class="mx-4 mb-4 border-t-2 border-b-2 border-orange-100">
+      <p class="p-4">99 % af al data er skabt inden for de sidste 10 år. (a)</p>
     </div>
-    <div class="border-t-2 border-b-2 border-black">
-      <p>
+    <div class="mx-4 mb-4 border-t-2 border-b-2 border-orange-100">
+      <p class="p-4">
         Den ubegrænsede dataforbrug i dag kræver tre gange mere energi, end alle
         verdens solpaneler kan producere! (a)
       </p>
     </div>
-    <div class="border-t-2 border-b-2 border-black">
-      <p>91 % af alle websider får ingen trafik fra Google. (a)</p>
+    <div class="mx-4 mb-4 border-t-2 border-b-2 border-orange-100">
+      <p class="p-4">91 % af alle websider får ingen trafik fra Google. (a)</p>
     </div>
-    <div class="border-t-2 border-b-2 border-black">
-      <p>
+    <div class="mx-4 mb-4 border-t-2 border-b-2 border-orange-100">
+      <p class="p-4">
         Hver dag sendes der 320 milliarder e-mails, og hvert år sendes der 62
         billioner spam-e-mails – svarende til 20 millioner tons CO₂! (a), (b)
       </p>
     </div>
-    <p>
+    <p class="p-4">
       Kilder:(a) International Energy Agency, (b) “Bitcoin Tracking To Consume
       More Energy Than NZ” – Energetics, (c) Powering the Internet: Your Virtual
       Carbon Footprint – WebFX, (d) Energuide.be (e) Demandsage
     </p>
   </section>
-  <section>
-    <h2 class="text-2xl uppercase font-bold pb-8">Sådan deltager du:</h2>
-    <Link variant="primary" size="medium" href="#tilmelding">FOR INDIVIDER</Link
-    >
+
+  <section class="bg-orange-100 text-red-500/90 my-10">
+    <h2 class="pl-10 pt-18 text-2xl uppercase font-bold pb-8">
+      Sådan deltager du:
+    </h2>
+    <div class="pb-10 flex justify-center">
+      <Link variant="primary" size="medium" href="#tilmelding"
+        >FOR INDIVIDER</Link
+      >
+    </div>
   </section>
 
   <h2 class="text-2xl uppercase font-bold pb-8">Digital Oprydningsdag i tal</h2>
