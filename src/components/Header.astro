@@ -1,18 +1,52 @@
----
----
-<div class="flex items-center space-x-30 p-5">
+<div class="flex items-center justify-between p-5 gap-15">
+  <!-- Logo (højre side) -->
+  <a href="/">
+    <img src="/src/assets/images/logo.svg" alt="Logo" class="h-25">
+  </a>
 
-<a href="/">
-  <img src="/src/assets/images/logo.svg" alt="Logo" class="h-25">
-</a>
+  <!-- Menu (desktop) - Venstre side -->
+  <ul class="hidden lg:flex space-x-8 text-[25px] mr-auto gap-35">
+    <li><a href="/" class="">Deltag</a></li>
+    <li><a href="/" class="">Individer</a></li>
+    <li><a href="/resources" class="">Ressourcer</a></li>
+  </ul>
 
+  <!-- Burger icon (mobil) -->
+  <div class="lg:hidden flex items-center">
+    <button id="burger-menu" class="text-5xl p-3">
+  &#9776;
+</button>
+  </div>
+</div>
 
-<ul class="flex space-x-30 text-[25px] ">
-    <li>Deltag</li>
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="lg:hidden fixed inset-0 bg-red-500/90 bg-opacity-90 z-10 hidden">
+  <!-- Close Button -->
+  <div class="flex justify-end p-5">
+    <button id="close-menu" class=" text-orange-100 text-4xl">&times;</button>
+  </div>
 
-<li><a href="/resources">Ressourcer</a></li>
-
-    <li>World Cleanup Day</li>
-    
+  <!-- Menu Links -->
+  <ul class="flex flex-col items-center space-y-5 text-2xl">
+    <li><a href="/" class="hover:text-[#FEAC39]">Deltag</a></li>
+    <li><a href="/" class="hover:text-[#FEAC39]">Individer</a></li>
+    <li><a href="/resources" class="hover:text-[#FEAC39]">Ressourcer</a></li>
   </ul>
 </div>
+
+
+<script>
+  const burgerMenu = document.getElementById('burger-menu');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const closeMenu = document.getElementById('close-menu');
+
+  // Åbn burger menu
+  burgerMenu.addEventListener('click', () => {
+    mobileMenu.classList.remove('hidden');
+  });
+
+  // Luk burger menu
+  closeMenu.addEventListener('click', () => {
+    mobileMenu.classList.add('hidden');
+  });
+</script>
