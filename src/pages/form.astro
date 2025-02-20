@@ -1,0 +1,68 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Button from "../components/Button.astro";
+import mustard_box from "../assets/images/mustard_box.web";
+---
+
+<MainLayout>
+  <section id="tilmelding" class="max-w-lg mx-auto mt-32 p-6  rounded-lg">
+    <h2 class="text-4xl font-bold pb-6  text-center" style="background-image: url('mustard_box.webp');">Tilmeld dig</h2>
+    <form class="space-y-6">
+      <div>
+        <label for="nummer" class="block font-medium">Antal:</label>
+        <input type="number" id="nummer" value="1" min="0" max="100" class="mt-1 block w-full border border-gray-300 rounded-lg p-2 focus:ring-blue-500 focus:border-blue-500" />
+      </div>
+
+      <div>
+        <span class="block font-medium">Levering:</span>
+        <div class="flex items-center gap-4 mt-1">
+          <label class="flex items-center gap-2">
+            <input type="radio" id="postdk" name="levering" checked class="text-blue-500 focus:ring-blue-500" />
+            PostDK
+          </label>
+          <label class="flex items-center gap-2">
+            <input type="radio" id="afhent" name="levering" class="text-blue-500 focus:ring-blue-500" />
+            Afhent
+          </label>
+        </div>
+      </div>
+
+      <div>
+        <label for="navn" class="block font-medium">Navn:</label>
+        <input type="text" id="navn" name="navn" placeholder="Anders And" class="mt-1 block w-full border border-gray-300 rounded-lg p-2 focus:ring-blue-500 focus:border-blue-500" />
+      </div>
+
+      <div>
+        <label for="adresse" class="block  font-medium">Adresse:</label>
+        <input type="text" id="adresse" name="adresse" placeholder="Paradisæblevej 8" class="mt-1 block w-full border border-gray-300 rounded-lg p-2 focus:ring-blue-500 focus:border-blue-500" />
+      </div>
+
+      <div>
+        <label for="postnummer" class="block  font-medium">Postnummer & By:</label>
+        <div class="grid grid-cols-6 gap-4 mt-1">
+          <input type="text" id="postnummer" name="postnummer" class="col-span-2 border border-gray-300 rounded-lg p-2 focus:ring-blue-500 focus:border-blue-500" placeholder="0900" />
+          <input type="text" id="bynavn" name="bynavn" class="col-span-4 border border-gray-300 rounded-lg p-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Andeby C" />
+        </div>
+      </div>
+
+      <div>
+        <label for="email" class="block  font-medium">Email:</label>
+        <input type="tel" id="email" name="email" placeholder="andersand@gmail.com" class="mt-1 block w-full border border-gray-300 rounded-lg p-2 focus:ring-blue-500 focus:border-blue-500" />
+      </div>
+
+      <div>
+        <label for="telefon" class="block  font-medium">Telefon:</label>
+        <input type="tel" id="telefon" name="telefon" placeholder="555-555" class="mt-1 block w-full border border-gray-300 rounded-lg p-2 focus:ring-blue-500 focus:border-blue-500" />
+      </div>
+
+      <div class="flex items-center gap-2">
+        <input type="checkbox" id="nyhedsbrev" name="nyhedsbrev" class="text-blue-500 focus:ring-blue-500" />
+        <label for="nyhedsbrev" class=" font-medium">Ja tak til nyhedsbreve og tilbud</label>
+      </div>
+
+      <div class="flex justify-end">
+        <Button variant="primary" size="medium">Til betaling</Button>
+      </div>
+    </form>
+  </section>
+</MainLayout>

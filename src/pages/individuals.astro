@@ -1,0 +1,56 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import kasse_1 from "../assets/images/kasse_1.svg";
+import Button from "../components/Button.astro";
+import Link from "../components/Link.astro";
+import { Image } from "astro:assets";
+import thumbsup from "../assets/images/thumbsup.png";
+import aeble from "../assets/images/æble.png";
+---
+
+<MainLayout>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    </head>
+    <body class="text-[#FFFAE8] font-['Roboto_Mono'] text-center text-[20px] p-5">
+        <div class="max-w-[850px] mx-auto">
+            <h1 class="text-2xl font-bold">Digital Cleanup Day<br><span class="font-bold">for individer</span></h1>
+            <p>Sådan laver du en digital oprydning</p>
+            
+            <div class="flex justify-center gap-5 flex-wrap md:flex-nowrap">
+                <div class="relative p-5 bg-cover bg-no-repeat w-[413px] h-[300px] text-[#FFFAE8] overflow-auto box-border" style="background-image: url('kasse_1.svg');">
+                    <p class="relative m-0 p-7 text-[14px] leading-[1.4] max-h-full overflow-hidden">
+                        <strong>TRIN 1<br>
+                            Ryd op på din smartphone. Slet alle apps, du sjældent eller aldrig bruger. De optager plads, bruger strøm og opdateres unødvendigt. Fjern også gamle brugerkonti og e-mails, du ikke længere har brug for. Gennemgå dine billeder og videoer – ved at slette dubletter og unødvendige filer kan du frigøre masser af lagerplads. Se vejledningen om, hvordan du rydder op på din smartphone og tablet.</strong>
+                    </p>
+                </div>
+                
+                <div class="relative p-5 bg-cover bg-no-repeat w-[413px] h-[300px] text-[#FFFAE8] overflow-auto box-border" style="background-image: url('kasse_1.svg');">
+                    <p class="relative m-0 p-7 text-[14px] leading-[1.4] max-h-full overflow-hidden">
+                        <strong>TRIN 2<br>
+                            Ryd op på din computers harddisk. Sorter dine filer og slet dubletter eller filer, der er blevet unødvendige. Gennemgå dine billeder, og slet dem, der er uskarpe eller ikke længere relevante. Tjek dine videofiler og fjern dem, du allerede har set eller ikke længere har brug for. Arkivér de vigtige filer. Du kan endda finde nogle sjove og nostalgiske ting på din computer! Se vejledningen om, hvordan du rydder op på din computer og harddisk.</strong>
+                    </p>
+                </div>
+            </div>
+            
+            <div class="flex justify-center gap-5 flex-wrap md:flex-nowrap mt-5">
+                <div class="relative p-5 bg-cover bg-no-repeat w-[413px] h-[300px] text-[#FFFAE8] overflow-auto box-border" style="background-image: url('kasse_1.svg');">
+                    <p class="relative m-0 p-7 text-[14px] leading-[1.4] max-h-full overflow-hidden">
+                        <strong>TRIN 3<br>
+                            Ryd op i din e-mailindbakke. Sorter dine e-mails efter de ældste og arkivér dem. Afmeld nyhedsbreve, du alligevel ikke læser. Hvis du har lange samtaler, så behold kun den nyeste e-mail og slet resten! Søg efter almindelige navne, adresser eller nøgleord for hurtigt at finde og rydde op i gamle e-mails. Vær modig – tryk på slet-knappen! Se vejledningen om, hvordan du rydder op i din e-mailindbakke.</strong>
+                    </p>
+                </div>
+                
+                <div class="relative p-5 bg-cover bg-no-repeat w-[413px] h-[300px] text-[#FFFAE8] overflow-auto box-border" style="background-image: url('kasse_1.svg');">
+                    <p class="relative m-0 p-7 text-[14px] leading-[1.4] max-h-full overflow-hidden">
+                        <strong>TRIN 4<br>
+                            Lav nye digitale vaner. Brug færre e-mails og flere samarbejdsværktøjer. Stop med at sende ‘ok’ og ‘tak’ e-mails! Opbevar filer ét sted i skyen og lav kun backup af det vigtigste.
+                            Små ændringer, som at slukke video under møder, begrænse streaming og reducere tid på sociale medier, kan mindske dit digitale aftryk. Vær kreativ og lev let!</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</MainLayout>
