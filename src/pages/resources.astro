@@ -2,7 +2,6 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from '../components/Button.astro';
 import Header from '../components/Header.astro';
-
 import Link from '../components/Link.astro';
 import { Image } from 'astro:assets';
 import thumbsup from "../assets/images/thumbsup.png";
@@ -11,52 +10,56 @@ import thumbsup from "../assets/images/thumbsup.png";
 <MainLayout>
 
     
-	<h1 class="flex justify-center text-[64px] py-6">Ressourcer & materialer</h1>
+	<h1 class="flex justify-center text-[30px] sm:text-[64px] sm:py-6">Ressourcer & materialer</h1>
 	<div class="relative min-h-screen flex justify-center items-center">
   <!-- Baggrundsbillede -->
-<img src="/src/assets/images/æble.png" alt="" class="absolute w-3/5 h-auto top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-50 z-0">
+<img src="/src/assets/images/aeble.png" alt="" class="absolute w-3/5 h-auto top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-50 z-0">
 
   <!-- Indhold -->
   <div class="grid grid-cols-3 gap-4 w-3/4 py-[20px] relative z-10">
     <div class="relative">
       <img src="/src/assets/images/lillekasse.png" alt="" class="mx-auto">
-      <p class="absolute inset-0 flex items-center justify-center text-center">Retningslinjer for enkeltpersoner</p>
+      <p class="absolute inset-0 flex items-center justify-center text-center underline decoration-orange-100">Retningslinjer for enkeltpersoner</p>
     </div>
     <div class="relative">
       <img src="/src/assets/images/lillekasse.png" alt="" class="mx-auto">
-      <p class="absolute inset-0 flex items-center justify-center text-center">Retningslinjer for virksomheder</p>
+      <p class="absolute inset-0 flex items-center justify-center text-center underline decoration-orange-100">Retningslinjer for virksomheder</p>
     </div>
     <div class="relative">
       <img src="/src/assets/images/lillekasse.png" alt="" class="mx-auto">
-      <p class="absolute inset-0 flex items-center justify-center text-center">Sådan rydder du op på din <br> computer og Drive</p>
-    </div>
-    
-    <div class="relative">
-      <img src="/src/assets/images/lillekasse.png" alt="" class="mx-auto">
-      <p class="absolute inset-0 flex items-center justify-center text-center">Retningslinjer for skoler</p>
-    </div>
-    <div class="relative">
-      <img src="/src/assets/images/lillekasse.png" alt="" class="mx-auto">
-      <p class="absolute inset-0 flex items-center justify-center text-center">Retningslinjer for kommuner</p>
-    </div>
-    <div class="relative">
-      <img src="/src/assets/images/lillekasse.png" alt="" class="mx-auto">
-      <p class="absolute inset-0 flex items-center justify-center text-center">Indsamling af deltagerdata 2</p>
+      <p class="absolute inset-0 flex items-center justify-center text-center underline decoration-orange-100">Sådan rydder du op på din <br> computer og Drive</p>
     </div>
     
     <div class="relative">
       <img src="/src/assets/images/lillekasse.png" alt="" class="mx-auto">
-      <p class="absolute inset-0 flex items-center justify-center text-center">Sådan rydder du op på din <br> smartphone og tablet</p>
+      <p class="absolute inset-0 flex items-center justify-center text-center underline decoration-orange-100">Retningslinjer for skoler</p>
     </div>
     <div class="relative">
       <img src="/src/assets/images/lillekasse.png" alt="" class="mx-auto">
-      <p class="absolute inset-0 flex items-center justify-center text-center">Indsamling af deltagerdata 1</p>
+      <p class="absolute inset-0 flex items-center justify-center text-center underline decoration-orange-100">Retningslinjer for kommuner</p>
     </div>
     <div class="relative">
       <img src="/src/assets/images/lillekasse.png" alt="" class="mx-auto">
-      <p class="absolute inset-0 flex items-center justify-center text-center">Sådan rydder du op i dine e-mails</p>
+      <p class="absolute inset-0 flex items-center justify-center text-center underline decoration-orange-100">Indsamling af deltagerdata 2</p>
+    </div>
+    
+    <div class="relative">
+      <img src="/src/assets/images/lillekasse.png" alt="" class="mx-auto">
+      <p class="absolute inset-0 flex items-center justify-center text-center underline decoration-orange-100">Sådan rydder du op på din <br> smartphone og tablet</p>
+    </div>
+    <div class="relative">
+      <img src="/src/assets/images/lillekasse.png" alt="" class="mx-auto">
+      <p class="absolute inset-0 flex items-center justify-center text-center underline decoration-orange-100">Indsamling af deltagerdata 1</p>
+    </div>
+    <div class="relative">
+      <img src="/src/assets/images/lillekasse.png" alt="" class="mx-auto">
+      <p class="absolute inset-0 flex items-center justify-center text-center underline decoration-orange-100">Sådan rydder du op i dine e-mails</p>
     </div>
   </div>
+</div>
+
+<div class="flex justify-center p-8">
+   <Button variant="primary" size="medium">TILMELD</Button>
 </div>
 
 </MainLayout>
